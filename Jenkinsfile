@@ -9,7 +9,7 @@ pipeline {
 
     stage('Smoke Test') {
       steps {
-        git(url: 'https://github.com/sowmyanarayanan-sailapathi/ACMEBuild', branch: 'master')
+        git(url: 'https://github.com/sowmyanarayanan-sailapathi/Salesforce', branch: 'master')
         bat 'mvn -f Salesforce/pom.xml test'
       }
     }
