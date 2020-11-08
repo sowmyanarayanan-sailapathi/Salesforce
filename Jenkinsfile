@@ -15,6 +15,9 @@ pipeline {
     }
 
     stage('Deploy') {
+      when {
+        branch 'master'
+      }
       steps {
         input(id: 'Yes', message: 'Ready to Deploy')
       }
